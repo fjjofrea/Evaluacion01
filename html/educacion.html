@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="es-ES">
+<head>
 	<meta charset="utf-8">
 	<meta name="author" content="Francisco Jofre Aranda">
-	<meta name="viewport" content="width=device-width user-scalable=no">
+	<meta name="viewport" content="width=device-width">
 	<meta name="keywords" content="NextU, Evaluacion, Francisco Jofre">
 	<title>Evaluación Fundamentos HTML - FJA</title>
-<head>
+</head>
+<body>
 	<header id="InicioEd">
-		<svg width="130" height="130" viewport="0 0 130 130">
+		<svg width="130" height="130">
 			<image xlink:href="../images/Logo.svg" width="130" height="130"></image>
 		</svg>
 		<h1>Resumen Curricular</h1>
@@ -16,9 +18,9 @@
 	</header>
 	<nav><a href="../index.html">Inicio</a> | <a href="#InicioEd">Educación</a> | <a href="./experiencia.html">Experiencia</a></nav>
 	<section>
+		<h2>Educación</h2>
 		<article>
-			<h2>Educación</h2>
-			<p><table border="1" cellpadding="10" cellspacing="0">
+			<table>
 				<thead>
 				<tr>
 					<th>Año</th>
@@ -47,13 +49,15 @@
 					<td>Sí</td>
 				</tr>
 				</tbody>
-			</table></p>
+			</table>
 		</article>
 		<article>
 			<form autocomplete="on" name="Form1">
-				<legend><h3>Agregar estudios</h3></legend>
+				<fieldset>
+				        <legend><h3>Agregar estudios</h3></legend>
+				</fieldset>
 				<p><label for="anno">Año :</label>
-				<select name="anno" autofocus>
+				<select id="anno" autofocus>
 					<option value="1983">1983</option>
 					<option value="1984">1984</option>
 					<option value="1985">1985</option>
@@ -90,12 +94,13 @@
 					<option value="2016">2016</option>
 					<option value="2017">2017</option>
 					<option value="2018">2018</option>
-				</select></p>
+				</select>
+				</p>
 				<p><label for="instit">Institución :</label>
 				<input type="text" name="instit" required></p>
 				<p><label for="lugar">Lugar :</label>
-				<textarea name="comentarios" rows="2" cols="50"></textarea></p>
-				</br>
+				<textarea id="lugar" rows="2" cols="50"></textarea></p>
+				<br>
 				<p><input type="submit" value="Enviar"></p>
 			</form>
 		</article>
@@ -105,10 +110,8 @@
 			<ul>
 				<li>Email   : <a href="mailto:fjjofrea@gmail.com?Subject=Contacto">fjjofrea@gmail.com</a></li>
 				<li>Teléfono: +569 999 76266</li>
-				<li>Linkedin: <a href="https://www.linkedin.com/in/francisco-jofre-aranda-1312a37/" target="_blank"">Francisco</a></li>
+				<li>Linkedin: <a href="https://www.linkedin.com/in/francisco-jofre-aranda-1312a37/" target="_blank">Francisco</a></li>
 			</ul>
 	</footer>
-</head>
-<body>
 </body>
 </html>
